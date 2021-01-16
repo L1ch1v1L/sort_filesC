@@ -1,7 +1,10 @@
+#include <sys/stat.h>
+#include <sys/types.h>
+       
 void add_file_to_folder(char* name, char* name_of_folder)
 {	
 	int len_name_of_folder = strlen(name_of_folder);
-	mkdir(name_of_folder,0777);;
+	mkdir(name_of_folder,0777);
 //	printf("name:%s\n",name);
 	int len_name_of_file = strlen(name);
 //	printf("len_name_of_file:%d\n",len_name_of_file);

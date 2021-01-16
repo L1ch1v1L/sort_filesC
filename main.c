@@ -4,7 +4,6 @@
 #include "find_extension.h"
 #include "add_file_to_folder.h"
 #include <dirent.h>
-void add_file_to_folder(char* name, char* name_of_folder);
 
 void main()
 {	
@@ -17,10 +16,8 @@ void main()
   		char file_extension[1024];
   		char folder_music[7] = "Cmusic";
 		char folder_video[7] = "Cvideo";
-		char folder_archive[10] = "Carchives";
  	 	char extension_music[4] = ".mp3";
  	 	char extension_video[4] = ".mp4";
- 	 	char extension_archive[7] = ".tar.gz";
 		char* name = ent->d_name;
 		int len = strlen(name);
 		int strlen_of_file = strlen(name);
